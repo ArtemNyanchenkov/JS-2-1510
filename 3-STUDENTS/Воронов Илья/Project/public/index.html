@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="../src/layout/css/style.css"> -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <title>Home</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="header-wrap ">
+                <div class="head content">
+                    <div class="head-left">
+                        <div class="logo">
+                            <a href="#">
+                                <img src="../src/assets/img/header/logo.png" alt="logo">
+                                <h1>Bran<span>d</span></h1>
+                            </a>
+                        </div>
+                        <form action="#" class="search" name="search" method="GET">
+                            <input type="checkbox" id="browse">
+                            <label for="browse"><a>browse <i class="fas fa-caret-down"></i></a></label>
+                            <div class="browse-drop">
+                                <a>men</a>
+                                <a>women</a>
+                                <a>kids</a>
+                            </div>
+                            <input type="text" placeholder="Search for item...">
+                            <button type="submit"><i class="fas fa-search"></i></button>
+                        </form>
+                    </div>
+
+                    <div class="head-right">
+                        <form>
+                            <input type="checkbox" id="basket">
+                            <label for="basket">
+                                <img src="../src/assets/img/header/cart.png" alt="cart">
+                                <div class="num-cart"><span>0</span></div>
+                            </label>
+                            <div class="basket-drop">
+                                <div class="basket-items">
+                                    <!-- <div class="basket-item">
+                                        <img src="https://raw.githubusercontent.com/IlyaVoronOFF/pictureStatic/master/Brand/product/1.jpg" alt="product-1">
+                                        <div class="basket-item-details">
+                                            <a href="#">Mango People T-Shirt</a>
+                                            <p>
+                                                <form action="#">
+                                                    <input type="text" id="basket-quantity" value="3"> <span> X $54.00 - $<output name="result-item">128</output></span>
+                                            </p>
+                                        </div>
+                                        <i class="fas fa-times-circle"></i>
+                                    </div> -->
+                                    <div class="basket-empty">
+                                        <span>Корзина пуста</span>
+                                    </div>
+                                </div>
+                                <div class="basket-total">
+                                    <!-- <p>TOTAL</p>
+                                    <p>$ <output name="result">0</output></p> -->
+                                </div>
+                                <div class="basket-btn">
+                                    <button type="submit">Checkout</button>
+                                    <button type="reset">Go to cart</button>
+                        </form>
+                        </div>
+                        </div>
+                        </form>
+                        <div class="menu-acc">
+                            <a href="#" class="account">My account <i class="fas fa-caret-down"></i></a>
+                            <div class="account-drop">
+                                <a>log in</a>
+                                <a>registration</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <nav class="menu-nav">
+                    <ul class="menu">
+                        <li><a href="#" class="menu__link-1 active">Home</a></li>
+                        <li>
+                            <a href="product.html" class="menu__link-2">Man</a>
+                        </li>
+                        <li>
+                            <a href="single-page.html" class="menu__link-3">Women</a>
+                        </li>
+                        <li>
+                            <a href="#" class="menu__link-4">Kids</a>
+                        </li>
+                        <li>
+                            <a href="#" class="menu__link-5">Accoseriese</a>
+                        </li>
+                        <li>
+                            <a href="#" class="menu__link-6">Featured</a>
+                        </li>
+                        <li>
+                            <a href="checkout.html" class="menu__link-7">Hot deals</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+    </div>
+    <!-- slider -->
+    <div class="slider-wrap">
+        <div class="slider content">
+            <div class="slider__text">
+                <h1>The brand</h1>
+                <h3>of luxerious <span>fashion</span></h3>
+            </div>
+        </div>
+    </div>
+    <!-- banners -->
+    <div class="banners-wrap">
+        <div class="banners content">
+            <div class="banners__item">
+                <div class="banners__text">
+                    <h2>hot deal</h2>
+                    <h1>for men</h1>
+                </div>
+                <img src="https://raw.githubusercontent.com/IlyaVoronOFF/pictureStatic/master/Brand/banners/men.jpg" alt="hot deal">
+            </div>
+            <div class="banners__item">
+                <div class="banners__text">
+                    <h2>luxerious & trendy</h2>
+                    <h1>Accoseries</h1>
+                </div>
+                <img src="https://raw.githubusercontent.com/IlyaVoronOFF/pictureStatic/master/Brand/banners/accesories.jpg" alt="trendy">
+            </div>
+            <div class="banners__item">
+                <div class="banners__text">
+                    <h2>30% offer</h2>
+                    <h1>women</h1>
+                </div>
+                <img src="https://raw.githubusercontent.com/IlyaVoronOFF/pictureStatic/master/Brand/banners/women.jpg" alt="offer">
+            </div>
+            <div class="banners__item">
+                <div class="banners__text">
+                    <h2>new arrivals</h2>
+                    <h1>for kids</h1>
+                </div>
+                <img src="https://raw.githubusercontent.com/IlyaVoronOFF/pictureStatic/master/Brand/banners/kids.jpg" alt="kids">
+            </div>
+        </div>
+    </div>
+    <!-- product-items -->
+    <div class="product-wrap">
+        <div class="product content">
+            <div class="product-title">
+                <h1>Fetured items</h1>
+                <p>Shop for items based on what we featured in this week</p>
+            </div>
+
+            <div class="product-items" id="catalog-index">
+            </div>
+            <a href="#" class="product-btn">Browse All Product <i class="fas fa-long-arrow-alt-right"></i></a>
+        </div>
+    </div>
+    <!-- discount -->
+    <div class="discount-wrap">
+        <div class="discount content">
+            <div class="discount__banner">
+                <img src="https://raw.githubusercontent.com/IlyaVoronOFF/pictureStatic/master/Brand/discount/01.jpg" alt="offer">
+                <div class="banner__title">
+                    <h1>30% <span>offer</span></h1>
+                    <p>FOR WOMEN</p>
+                </div>
+            </div>
+            <div class="item-group">
+                <div class="discount__item">
+                    <img src="../src/assets/img/discount/Forma-1.png" alt="delivery">
+                    <div class="item__text">
+                        <h1>Free Delivery</h1>
+                        <p>Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
+                    </div>
+                </div>
+                <div class="discount__item">
+                    <img src="../src/assets/img/discount/Forma-2.png" alt="sales">
+                    <div class="item__text">
+                        <h1>Sales & discounts</h1>
+                        <p>Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.
+                        </p>
+                    </div>
+                </div>
+                <div class="discount__item">
+                    <img src="../src/assets/img/discount/Forma-3.png" alt="quality">
+                    <div class="item__text">
+                        <h1>Quality assurance</h1>
+                        <p>Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- subscribe -->
+    <div class="subscribe-wrap">
+        <div class="subscribe content">
+            <div class="feedback">
+                <img src="../src/assets/img/subscribe/photo.png" alt="photo">
+                <div class="feedback__content">
+                    <p>“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus condimentum a. Aliquam condimentum mattis neque sed pretium”</p>
+                    <h2>Bin Burhan</h2>
+                    <h3>Dhaka, Bd</h3>
+                    <div class="pagination">
+                        <a href="#"></a>
+                        <a href="#" class="pag-active"></a>
+                        <a href="#"></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="subscribe__form">
+                <div class="form__container">
+                    <h1>subscribe</h1>
+                    <p>FOR OUR NEWLETTER AND PROMOTION</p>
+                    <form action="#" method="get">
+                        <input type="email" placeholder="Enter Your Email">
+                        <button type="submit">subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <footer>
+        <div class="footer-wrap">
+            <div class="footer-top content">
+                <div class="footer__description">
+                    <div class="logo">
+                        <a href="#">
+                            <img src="../src/assets/img/header/logo.png" alt="logo">
+                            <h1>Bran<span>d</span></h1>
+                        </a>
+                    </div>
+                    <p>Objectively transition extensive data rather than cross functional solutions. Monotonectally syndicate multidisciplinary materials before go forward benefits. Intrinsicly syndicate an expanded array of processes and cross-unit partnerships.<br><br>                        Efficiently plagiarize 24/365 action items and focused infomediaries. Distinctively seize superior initiatives for wireless technologies. Dynamically optimize. Objectively strategize seamless relationships via resource sucking
+                        testing procedures. Proactively cultivate next-generation results for value-added methodologies. Dynamically plagiarize unique methodologies after performance based methodologies. Monotonectally empower stand-alone mindshare rather
+                        than ubiquitous opportunities. Dynamically orchestrate resource sucking scenarios after alternative synergy. Compellingly envisioneer corporate methods of empowerment before standards compliant technologies. Objectively facilitate
+                        progressive.
+                    </p>
+                </div>
+
+                <nav class="footer__menu">
+                    <div class="column-menu">
+                        <h2>COMPANY</h2>
+                        <a href="#">home</a>
+                        <a href="#">shop</a>
+                        <a href="#">about</a>
+                        <a href="#">how it works</a>
+                        <a href="#">contact</a>
+                    </div>
+                    <div class="column-menu">
+                        <h2>information</h2>
+                        <a href="#">tearms & condition</a>
+                        <a href="#">privacy policy</a>
+                        <a href="#">how to buy</a>
+                        <a href="#">how to sell</a>
+                        <a href="#">promotion</a>
+                    </div>
+                    <div class="column-menu">
+                        <h2>shop category</h2>
+                        <a href="#">men</a>
+                        <a href="#">women</a>
+                        <a href="#">child</a>
+                        <a href="#">apparel</a>
+                        <a href="#">brows all</a>
+                    </div>
+                </nav>
+            </div>
+            <div class="footer-bottom">
+                <div class="bottom-container content">
+                    <div class="copyright">
+                        <p>&copy; 2017 Brand All Rights Reserved.</p>
+                    </div>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                        <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- <script src="../src/components/basket.js"></script>
+    <script src="../src/components/catalog-index.js"></script> -->
+</body>
+
+</html>

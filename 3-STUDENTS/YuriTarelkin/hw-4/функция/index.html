@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form action="index.html" method="POST">
+        <input type="text" class="form_name" name="fname" value="">
+        <label for="name">Ваше Имя</label>
+        <input type="tel" class="form_phone" name="phone" value="">
+        <label for="phone">Контактный телефон</label>
+        <input type="email" class="form_email" name="email" value="" id="123">
+        <label for="email">E-mail</label>
+        <input type="text" class="form_text" name="text" value="">
+        <label for="text">Текст</label>        
+        <input type="submit" value="Отправить" name="submit" onclick="return checkdata(this.form)">
+    </form>      
+        
+    <script src="form.js"></script>   
+</body>
+</html>

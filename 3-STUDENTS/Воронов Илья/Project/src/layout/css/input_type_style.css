@@ -1,0 +1,83 @@
+.category-block input[type="checkbox"],
+.brand-block input[type="checkbox"],
+.designer-block input[type="checkbox"],
+.filter-chbx input[type="checkbox"] {
+  display: none;
+}
+
+.category-block input[type="checkbox"] + label:before,
+.brand-block input[type="checkbox"] + label::before,
+.designer-block input[type="checkbox"] + label::before,
+.filter-chbx input[type="checkbox"] + label::before {
+  content: "";
+  display: inline-block;
+  vertical-align: text-bottom;
+  width: 16px;
+  height: 16px;
+  border-radius: 3px;
+  margin-right: 10px;
+  -webkit-box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.3), 0px 1px 0px 0px rgba(255, 255, 255, 0.8);
+          box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.3), 0px 1px 0px 0px rgba(255, 255, 255, 0.8);
+}
+
+.category-block input[type="checkbox"]:checked + label:before,
+.brand-block input[type="checkbox"]:checked + label:before,
+.designer-block input[type="checkbox"]:checked + label:before,
+.filter-chbx input[type="checkbox"]:checked + label:before {
+  content: "\2713";
+  font-size: 16px;
+  color: #ffffff;
+  background-color: #ef5b70;
+  text-align: center;
+  line-height: 17px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.filter-range input[type="range"] {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 10px;
+  outline: none;
+  border-radius: 5px;
+  background: -webkit-linear-gradient(left, #ef5b70 0%, #ef5b70 50%, #f0f0f0 50%, #f0f0f0 100%);
+}
+
+.filter-range input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 18px;
+  height: 18px;
+  background: #ef5b70;
+  border-radius: 18px;
+  cursor: pointer;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.filter-range input[type="range"]::-webkit-slider-thumb:hover {
+  width: 24px;
+  height: 24px;
+}
+
+.radio-input input[type="radio"] {
+  display: none;
+}
+
+.radio-input input[type="radio"] + label::before {
+  content: "";
+  display: inline-block;
+  vertical-align: text-bottom;
+  width: 16px;
+  height: 16px;
+  border-radius: 8px;
+  margin-right: 10px;
+  -webkit-box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.3), 0px 1px 0px 0px rgba(255, 255, 255, 0.8);
+          box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.3), 0px 1px 0px 0px rgba(255, 255, 255, 0.8);
+}
+
+.radio-input input[type="radio"]:checked + label:before {
+  content: "";
+  background-color: #ffffff;
+  -webkit-box-shadow: inset 0px 0px 0px 5px #ef5b70;
+          box-shadow: inset 0px 0px 0px 5px #ef5b70;
+}

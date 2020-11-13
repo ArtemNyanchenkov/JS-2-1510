@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #catalol {
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+
+    .item {
+        width: 200px;
+        padding: 20px;
+        margin: 20px;
+        border: 1px solid red
+    }
+</style>
+<body>
+
+    <div id="app">
+        <!--h1>{{ hello }}</h1>
+        <br>
+        <input type="text" v-model.lazy="hello">
+        <br>
+        <input type="number" v-model="a"><br>
+        <input type="number" v-model="b"><br>
+        <button @click="calcSum">+</button>
+        <p>{{ sum }}</p>
+        <p>{{ +a + +b }}</p>
+        <p>{{ 100 + 600 * 2000 }}</p-->
+
+        <div id="catalol">
+            <div v-for="item of items" class="item">
+                <div>
+                    <img :src="item.productImg" alt="">
+                </div>
+                <div>
+                    <p><b>{{ item.productName }}</b></p>
+                    <p>${{ item.productPrice }}</p>
+                </div>
+                <button @click="buy(item)">buy</button>
+            </div>
+        </div>
+    </div>
+
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script>
+        const app = new Vue({
+            el: '#app',
+            data: {
+                // (state - в реакте)
+                // набор внутренних реактивных свойств компонента
+                // hello: 'Hello Vue!',
+                // a: 0,
+                // b: 0,
+                // sum: 0
+                items: [],
+                url: 'https://raw.githubusercontent.com/kellolo/static/master/JSON/catalog.json'
+            },
+            methods: {
+                buy(item) {
+                    console.log(item)
+                },
+                // calcSum() {
+                //     this.sum = +this.a + +this.b
+                // }
+                get(url) {
+                    return fetch(url).then(d => d.json())
+                }
+            },
+            mounted() {
+                console.log('I am mounted and going to fill some items')
+                this.get(this.url)
+                .then(data => {
+                    this.items = data;
+                });
+            },
+            beforeCreate() {
+                console.log('I am going to create myself')
+            },
+            beforeMount() {
+                console.log('I am going to mount myself')
+            },
+        });
+    </script>
+</body>
+</html>

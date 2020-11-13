@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../src/layout/css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <title>Product</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="header-wrap ">
+                <div class="head content">
+                    <div class="head-left">
+                        <div class="logo">
+                            <a href="#">
+                                <img src="../src/assets/img/header/logo.png" alt="logo">
+                                <h1>Bran<span>d</span></h1>
+                            </a>
+                        </div>
+                        <form action="#" class="search" name="search" method="GET">
+                            <input type="checkbox" id="browse">
+                            <label for="browse"><a>browse <i class="fas fa-caret-down"></i></a></label>
+                            <div class="browse-drop">
+                                <a>men</a>
+                                <a>women</a>
+                                <a>kids</a>
+                            </div>
+                            <input type="text" placeholder="Search for item...">
+                            <button type="submit"><i class="fas fa-search"></i></button>
+                        </form>
+                    </div>
+
+                    <div class="head-right">
+                        <a href="shopping-cart.html" class="cart">
+                            <picture><img src="../src/assets/img/header/cart.png" alt="cart"></picture>
+                        </a>
+                        <div class="menu-acc">
+                            <a href="#" class="account">My account <i class="fas fa-caret-down"></i></a>
+                            <div class="account-drop">
+                                <a>log in</a>
+                                <a>registration</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <nav class="menu-nav">
+                    <ul class="menu">
+                        <li><a href="index.html" class="menu__link-1">Home</a></li>
+                        <li>
+                            <a href="#" class="menu__link-2 active">Man</a>
+                        </li>
+                        <li>
+                            <a href="single-page.html" class="menu__link-3">Women</a>
+                        </li>
+                        <li>
+                            <a href="#" class="menu__link-4">Kids</a>
+                        </li>
+                        <li>
+                            <a href="#" class="menu__link-5">Accoseriese</a>
+                        </li>
+                        <li>
+                            <a href="#" class="menu__link-6">Featured</a>
+                        </li>
+                        <li>
+                            <a href="checkout.html" class="menu__link-7">Hot deals</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <!-- submenu -->
+        <div class="submenu-wrap">
+            <div class="submenu content">
+                <h1>New arrivals</h1>
+                <nav class="submenu-links">
+                    <a href="#">home</a>
+                    <a href="#">men</a>
+                    <a href="#">new arrivals</a>
+                </nav>
+            </div>
+        </div>
+        <!-- catalog -->
+        <div class="catalog-wrap">
+            <main class="catalog content">
+                <aside>
+                    <input type="checkbox" id="category" checked>
+                    <label for="category"><a>category<i class="fas fa-caret-down"></i></a></label>
+                    <div class="category-block">
+                        <p><input type="checkbox" id="category-link1"><label for="category-link1"><a>Accessories</a></label></p>
+                        <p><input type="checkbox" id="category-link2" checked><label for="category-link2"><a>Bags</a></label></p>
+                        <p><input type="checkbox" id="category-link3"><label for="category-link3"><a>Denim</a></label></p>
+                        <p><input type="checkbox" id="category-link4"><label for="category-link4"><a>Hoodies & Sweatshirts</a></label></p>
+                        <p><input type="checkbox" id="category-link5"><label for="category-link5"><a>Jackets & Coats</a></label></p>
+                        <p><input type="checkbox" id="category-link6"><label for="category-link6"><a>Pants</a></label></p>
+                        <p><input type="checkbox" id="category-link7"><label for="category-link7"><a>Polos</a></label></p>
+                        <p><input type="checkbox" id="category-link8"><label for="category-link8"><a>Shirts</a></label></p>
+                        <p><input type="checkbox" id="category-link9"><label for="category-link9"><a>Shoes</a></label></p>
+                        <p><input type="checkbox" id="category-link10"><label for="category-link10"><a>Shorts</a></label></p>
+                        <p><input type="checkbox" id="category-link11"><label for="category-link11"><a>Sweaters & Knits</a></label></p>
+                        <p><input type="checkbox" id="category-link12"><label for="category-link12"><a>T-Shirts</a></label></p>
+                        <p><input type="checkbox" id="category-link13"><label for="category-link13"><a>Tanks</a></label></p>
+                    </div>
+
+                    <input type="checkbox" id="brand">
+                    <label for="brand"><a>brand<i class="fas fa-caret-down"></i></a></label>
+                    <div class="brand-block">
+                        <p><input type="checkbox" id="brand-link1"><label for="brand-link1"><a>Accessories</a></label></p>
+                        <p><input type="checkbox" id="brand-link2"><label for="brand-link2"><a>Bags</a></label></p>
+                        <p><input type="checkbox" id="brand-link3"><label for="brand-link3"><a>Denim</a></label></p>
+                        <p><input type="checkbox" id="brand-link4"><label for="brand-link4"><a>Hoodies & Sweatshirts</a></label></p>
+                        <p><input type="checkbox" id="brand-link5"><label for="brand-link5"><a>Jackets & Coats</a></label></p>
+                        <p><input type="checkbox" id="brand-link6"><label for="brand-link6"><a>Pants</a></label></p>
+                        <p><input type="checkbox" id="brand-link7"><label for="brand-link7"><a>Polos</a></label></p>
+                        <p><input type="checkbox" id="brand-link8"><label for="brand-link8"><a>Shirts</a></label></p>
+                        <p><input type="checkbox" id="brand-link9"><label for="brand-link9"><a>Shoes</a></label></p>
+                        <p><input type="checkbox" id="brand-link10"><label for="brand-link10"><a>Shorts</a></label></p>
+                        <p><input type="checkbox" id="brand-link11"><label for="brand-link11"><a>Sweaters & Knits</a></label></p>
+                        <p><input type="checkbox" id="brand-link12"><label for="brand-link12"><a>T-Shirts</a></label></p>
+                        <p><input type="checkbox" id="brand-link13"><label for="brand-link13"><a>Tanks</a></label></p>
+                    </div>
+
+                    <input type="checkbox" id="designer">
+                    <label for="designer"><a>designer<i class="fas fa-caret-down"></i></a></label>
+                    <div class="designer-block">
+                        <p><input type="checkbox" id="designer-link1"><label for="designer-link1"><a>Accessories</a></label></p>
+                        <p><input type="checkbox" id="designer-link2"><label for="designer-link2"><a>Bags</a></label></p>
+                        <p><input type="checkbox" id="designer-link3"><label for="designer-link3"><a>Denim</a></label></p>
+                        <p><input type="checkbox" id="designer-link4"><label for="designer-link4"><a>Hoodies & Sweatshirts</a></label></p>
+                        <p><input type="checkbox" id="designer-link5"><label for="designer-link5"><a>Jackets & Coats</a></label></p>
+                        <p><input type="checkbox" id="designer-link6"><label for="designer-link6"><a>Pants</a></label></p>
+                        <p><input type="checkbox" id="designer-link7"><label for="designer-link7"><a>Polos</a></label></p>
+                        <p><input type="checkbox" id="designer-link8"><label for="designer-link8"><a>Shirts</a></label></p>
+                        <p><input type="checkbox" id="designer-link9"><label for="designer-link9"><a>Shoes</a></label></p>
+                        <p><input type="checkbox" id="designer-link10"><label for="designer-link10"><a>Shorts</a></label></p>
+                        <p><input type="checkbox" id="designer-link11"><label for="designer-link11"><a>Sweaters & Knits</a></label></p>
+                        <p><input type="checkbox" id="designer-link12"><label for="designer-link12"><a>T-Shirts</a></label></p>
+                        <p><input type="checkbox" id="designer-link13"><label for="designer-link13"><a>Tanks</a></label></p>
+                    </div>
+                </aside>
+
+                <article>
+                    <div class="top-filter">
+                        <div class="filter-block">
+                            <h3>Trending now</h3>
+                            <div class="filter-links">
+                                <a href="#">bohemian</a>
+                                <a href="#">floral</a>
+                                <a href="#">lace</a>
+                                <a href="#">floral</a>
+                                <a href="#">lace</a>
+                                <a href="#">bohemian</a>
+                            </div>
+                        </div>
+                        <div class="filter-block">
+                            <h3>size</h3>
+                            <div class="filter-chbx">
+                                <input type="checkbox" id="xxs">
+                                <label for="xxs">xxs</label>
+                                <input type="checkbox" id="xs">
+                                <label for="xs">xs</label>
+                                <input type="checkbox" id="s" checked>
+                                <label for="s">s</label>
+                                <input type="checkbox" id="m">
+                                <label for="m">m</label>
+                                <input type="checkbox" id="l">
+                                <label for="l">l</label>
+                                <input type="checkbox" id="xl">
+                                <label for="xl">xl</label>
+                                <input type="checkbox" id="xxl">
+                                <label for="xxl">xxl</label>
+                            </div>
+                        </div>
+                        <div class="filter-block">
+                            <h3>price</h3>
+                            <div class="filter-range">
+                                <input type="range" min="52" max="400">
+                                <div class="range">
+                                    <p>$52</p>
+                                    <p>$400</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bot-filter">
+                        <div class="bot-filter__block">
+                            <label for="sort">sort by</label>
+                            <select id="sort">
+                              <option selected disabled>name</option>
+                              <option value="куртка">куртка</option>
+                              <option value="худи">худи</option>
+                              <option value="футболка">футболка</option>
+                           </select>
+                        </div>
+                        <div class="bot-filter__block">
+                            <label for="show">show</label>
+                            <select id="show">
+                              <option value="06">06</option>
+                              <option selected disabled>09</option>
+                              <option value="12">12</option>
+                              <option value="15">15</option>
+                           </select>
+                        </div>
+                    </div>
+
+                    <div class="catalog-product-list" id="catalog-product">
+                    </div>
+
+                    <div class="catalog-nav">
+                        <div class="catalog-nav__number">
+                            <a href="#"><i class="fas fa-chevron-left"></i></a>
+                            <a href="#">1</a>
+                            <a href="#">2</a>
+                            <a href="#">3</a>
+                            <a href="#">4</a>
+                            <a href="#">5</a>
+                            <a href="#">6</a>
+                            <p>....</p>
+                            <a href="#">20</a>
+                            <a href="#"><i class="fas fa-chevron-right"></i></a>
+                        </div>
+                        <a href="#">view all</a>
+                    </div>
+                </article>
+            </main>
+        </div>
+        <!-- advantage -->
+        <div class="advantage-wrap">
+            <div class="advantage content">
+                <div class="advantage__item">
+                    <img src="../src/assets/img/catalog/i01.png" alt="delivery">
+                    <h3>Free Delivery</h3>
+                    <p>Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
+                </div>
+                <div class="advantage__item">
+                    <img src="../src/assets/img/catalog/i02.png" alt="discounts">
+                    <h3>Sales & discounts</h3>
+                    <p>Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
+                </div>
+                <div class="advantage__item">
+                    <img src="../src/assets/img/catalog/i03.png" alt="quality">
+                    <h3>Sales & discounts</h3>
+                    <p>Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
+                </div>
+            </div>
+        </div>
+        <!-- subscribe -->
+        <div class="subscribe-wrap">
+            <div class="subscribe content">
+                <div class="feedback">
+                    <img src="../src/assets/img/subscribe/photo.png" alt="photo">
+                    <div class="feedback__content">
+                        <p>“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus condimentum a. Aliquam condimentum mattis neque sed pretium”</p>
+                        <h2>Bin Burhan</h2>
+                        <h3>Dhaka, Bd</h3>
+                        <div class="pagination">
+                            <a href="#"></a>
+                            <a href="#" class="pag-active"></a>
+                            <a href="#"></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="subscribe__form">
+                    <div class="form__container">
+                        <h1>subscribe</h1>
+                        <p>FOR OUR NEWLETTER AND PROMOTION</p>
+                        <form action="#" method="get">
+                            <input type="email" placeholder="Enter Your Email">
+                            <button type="submit">subscribe</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- footer -->
+        <footer>
+            <div class="footer-wrap">
+                <div class="footer-top content">
+                    <div class="footer__description">
+                        <div class="logo">
+                            <a href="#">
+                                <img src="../src/assets/img/header/logo.png" alt="logo">
+                                <h1>Bran<span>d</span></h1>
+                            </a>
+                        </div>
+                        <p>Objectively transition extensive data rather than cross functional solutions. Monotonectally syndicate multidisciplinary materials before go forward benefits. Intrinsicly syndicate an expanded array of processes and cross-unit
+                            partnerships.
+                            <br><br> Efficiently plagiarize 24/365 action items and focused infomediaries. Distinctively seize superior initiatives for wireless technologies. Dynamically optimize. Objectively strategize seamless relationships via resource
+                            sucking testing procedures. Proactively cultivate next-generation results for value-added methodologies. Dynamically plagiarize unique methodologies after performance based methodologies. Monotonectally empower stand-alone
+                            mindshare rather than ubiquitous opportunities. Dynamically orchestrate resource sucking scenarios after alternative synergy. Compellingly envisioneer corporate methods of empowerment before standards compliant technologies.
+                            Objectively facilitate progressive.
+                        </p>
+                    </div>
+
+                    <nav class="footer__menu">
+                        <div class="column-menu">
+                            <h2>COMPANY</h2>
+                            <a href="#">home</a>
+                            <a href="#">shop</a>
+                            <a href="#">about</a>
+                            <a href="#">how it works</a>
+                            <a href="#">contact</a>
+                        </div>
+                        <div class="column-menu">
+                            <h2>information</h2>
+                            <a href="#">tearms & condition</a>
+                            <a href="#">privacy policy</a>
+                            <a href="#">how to buy</a>
+                            <a href="#">how to sell</a>
+                            <a href="#">promotion</a>
+                        </div>
+                        <div class="column-menu">
+                            <h2>shop category</h2>
+                            <a href="#">men</a>
+                            <a href="#">women</a>
+                            <a href="#">child</a>
+                            <a href="#">apparel</a>
+                            <a href="#">brows all</a>
+                        </div>
+                    </nav>
+                </div>
+                <div class="footer-bottom">
+                    <div class="bottom-container content">
+                        <div class="copyright">
+                            <p>&copy; 2017 Brand All Rights Reserved.</p>
+                        </div>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                            <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="../src/components/catalog-product.js"></script>
+</body>
+
+</html>

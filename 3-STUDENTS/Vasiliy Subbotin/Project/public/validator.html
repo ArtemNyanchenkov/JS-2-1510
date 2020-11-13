@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Валидатор</title>
+    <style>
+        form > input {display: block; margin: 10px 0;}
+        .error {border-color: red; outline: none}
+        .not-active {display: none;}
+        p {color: red}
+    </style>
+</head>
+<body>
+    <form class="formValidator">
+        <span>Your name</span>
+        <input type="text", class='name', placeholder="name">
+        <p class='not-active'>Имя должно состоять из букв длинной от 2 до 15 символов</p>
+        <span>Your phone</span>
+        <input type="tel" class="tel" placeholder="phone">
+        <p class='not-active'>Телефон должен быть формата +7(000)000-0000</p>
+        <span>Your email</span>
+        <input type="email" class="email" placeholder="email">
+        <p class='not-active'>E-mail имеет вид mymail@mail.ru, или my.mail@mail.ru, или my-mail@mail.ru</p>
+        <input type="submit" value='Submit' class='button'>
+    </form>
+
+    <script>
+        let form = document.querySelector('.formValidator')
+        let button = document.querySelector('.button')
+        let reg = {
+            name: /^[a-zA-Zа-я-А-Я]{2,15}$/,
+            tel: /^\+7\([0-9]{3}\)[0-9]{3}\-[0-9]{4}$/,
+            email: /^[a-z]*(-|\.|)[a-z]*\@[a-z]*\.[a-z]{2}$/
+        }
+        function inputChange(event){
+            el = event.target
+            key = el.classList[0]
+            if (!reg[key].test(el.value)) {
+                el.classList.add('error')
+                el.nextElementSibling.classList.remove('not-active')
+                }
+                else {
+                el.classList.remove('error')
+                el.nextElementSibling.classList.add('not-active')
+                }
+        }
+
+        for (var i=0; i < 3; i++) {
+            form[i].addEventListener('input', function(event){
+                inputChange(event)
+            })
+        }
+
+        button.addEventListener('click', function(event){
+            for (var i=0; i < 3; i++) {
+                if (form[i].value === ''){
+                    form[i].classList.add('error')
+                    form[i].nextElementSibling.classList.remove('not-active')
+                }
+            }
+            if (document.querySelector('.error'))
+            {
+                event.preventDefault()
+            }
+        })
+
+
+    </script>
+</body>
+</html>

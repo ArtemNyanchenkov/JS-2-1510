@@ -1,0 +1,30 @@
+@media (min-width: 1200px) {
+    .content {
+        width: 1140px;
+    }
+}
+
+@media (max-width: 1199.98px) {
+    .content {
+        width: 960px;
+    }
+}
+
+@media (max-width: 991px) {
+    .content {
+        width: 720px;
+    }
+}
+
+@media (max-width: 767px) {
+    .content {
+        width: 540px;
+    }
+}
+
+@media (max-width: 575px) {
+    .content {
+        width: 100%;
+        padding: 0 15px;
+    }
+}

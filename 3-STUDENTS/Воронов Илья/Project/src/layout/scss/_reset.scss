@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    &:before {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    &:after {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+}
+
+html {
+    body {
+        font-family: "Lato", sans-serif;
+    }
+}
+
+.content {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+}

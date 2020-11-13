@@ -1,0 +1,140 @@
+.checkout-details {
+  padding: 73px 0;
+}
+
+.checkout-details__contents {
+  border-bottom: 1px solid #e8e8e8;
+  label {
+    height: 72px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    color: #222222;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  input {
+    display: none;
+    &:checked ~ .checkout-details__forms {
+      display: flex;
+    }
+  }
+}
+
+.checkout-details__forms {
+  height: 464px;
+  width: inherit;
+  display: none;
+  justify-content: center;
+  form {
+    height: 390px;
+    width: 535px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    h3 {
+      font-size: 13px;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: #222222;
+    }
+    p {
+      font-size: 13px;
+      font-weight: 400;
+      color: #b3b2b2;
+    }
+    label {
+      height: auto;
+      display: flex;
+      align-content: center;
+      align-items: center;
+      color: #222222;
+      font-size: 13px;
+      font-weight: 700;
+      text-transform: uppercase;
+      &:first-of-type {
+        margin-bottom: 10px;
+      }
+      input {
+        height: 14px;
+        width: 14px;
+        display: flex;
+        margin: 0 14px 0 0;
+      }
+    }
+    a {
+      width: 180px;
+      height: 50px;
+      border: 1px solid #eaeaea;
+      background-color: #ffffff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-decoration: none;
+      color: #4a4a4a;
+      font-size: 14px;
+      font-weight: 700;
+      text-transform: uppercase;
+      transition-duration: 0.5s;
+      &:hover {
+        @include buttonHover();
+      }
+    }
+    &:last-of-type {
+      h4 {
+        color: #222222;
+        font-size: 12px;
+        font-weight: 400;
+        text-transform: uppercase;
+        margin: 0 0 16px 0;
+        span {
+          color: #ff0d0d;
+        }
+      }
+      input {
+        display: block;
+        width: 380px;
+        height: 45px;
+        border: 1px solid #eaeaea;
+        background-color: #ffffff;
+        outline: none;
+        padding: 0 10px;
+      }
+      div {
+        &:nth-of-type(4) {
+          color: #ff0d0d;
+          font-size: 13px;
+          font-weight: 700;
+        }
+        &:last-of-type {
+          display: flex;
+          a {
+            &:first-of-type {
+              margin-right: 32px;
+            }
+            &:last-of-type {
+              color: #222222;
+              font-size: 14px;
+              font-weight: 700;
+              text-transform: none;
+              text-decoration: none;
+              border: none;
+              &:hover {
+                color: $mainColor;
+                border: none;
+                background-color: inherit;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+
+

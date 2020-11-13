@@ -1,0 +1,181 @@
+.collapse {
+    padding: 90px 0;
+}
+
+.collapse-item {
+    border-bottom: 1px solid #e8e8e8;
+    >input {
+        pointer-events: none;
+        display: none;
+    }
+    >label {
+        font-size: 16px;
+        font-weight: bold;
+        color: #222222;
+        text-transform: uppercase;
+        line-height: 72px;
+        cursor: pointer;
+        a {
+            display: block;
+            text-decoration: none;
+            color: #222222;
+            pointer-events: none;
+            &:hover {
+                background-color: #e8e8e8;
+                color: #b3b2b2;
+            }
+        }
+    }
+    .collapse-form {
+        overflow: hidden;
+        height: 0;
+        justify-content: start;
+        padding: 0 35px 0 35px;
+        transition: height 0.5s ease-in-out;
+        h3 {
+            font-size: 13px;
+            font-weight: bold;
+            color: #222222;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        }
+        p {
+            font-size: 13px;
+            color: #b3b2b2;
+            margin-bottom: 25px;
+        }
+        label {
+            font-size: 12px;
+            color: #222222;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+        form {
+            margin-bottom: 80px;
+        }
+        &__left {
+            width: 50%;
+            span {
+                display: flex;
+                height: 30px;
+                width: 100%;
+                align-items: center;
+                input {
+                    cursor: pointer;
+                }
+                label {
+                    margin-left: 15px;
+                    cursor: pointer;
+                    user-select: none;
+                    transition: all 0.3 ease-in-out;
+                    &:hover {
+                        color: #ef5b70;
+                    }
+                }
+            }
+            .radio-input {
+                margin-bottom: 25px;
+            }
+            a {
+                display: block;
+                font-size: 13px;
+                color: #b3b2b2;
+                text-decoration: none;
+                margin-bottom: 10px;
+                transition: all 0.3s ease-in-out;
+                i {
+                    margin: 0;
+                    margin-right: 5px;
+                }
+                &:hover {
+                    color: #222222;
+                }
+            }
+            button {
+                margin-top: 20px;
+                outline: none;
+                border: solid 1px #eaeaea;
+                padding: 20px 60px;
+                font-size: 14px;
+                font-weight: bold;
+                color: #4a4a4a;
+                background-color: white;
+                text-transform: uppercase;
+                cursor: pointer;
+                transition: all 0.3s ease-in-out;
+                &:hover {
+                    color: white;
+                    background-color: black;
+                }
+            }
+        }
+        &__right {
+            width: 35%;
+            .email-input {
+                margin-bottom: 30px;
+                p {
+                    display: flex;
+                    flex-direction: column;
+                    label {
+                        margin-bottom: 10px;
+                        span {
+                            color: #ff0d0d;
+                            font-size: 17px;
+                        }
+                    }
+                    input {
+                        outline: none;
+                        border: solid 1px #eaeaea;
+                        padding: 15px 25px;
+                        transition: all 0.3s ease-in-out;
+                        &:hover,
+                        &:focus {
+                            box-shadow: inset 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
+                        }
+                    }
+                }
+                .required {
+                    font-size: 13px;
+                    color: #ff0d0d;
+                    text-transform: capitalize;
+                }
+            }
+            .btn-block {
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                button {
+                    outline: none;
+                    border: solid 1px #eaeaea;
+                    padding: 20px 60px;
+                    font-size: 14px;
+                    font-weight: bold;
+                    color: #4a4a4a;
+                    background-color: white;
+                    text-transform: uppercase;
+                    cursor: pointer;
+                    margin-right: 30px;
+                    transition: all 0.3s ease-in-out;
+                    &:hover {
+                        color: white;
+                        background-color: black;
+                    }
+                }
+                a {
+                    font-size: 14px;
+                    color: #222222;
+                    text-transform: capitalize;
+                    text-decoration: none;
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+}
+
+input:checked~.collapse-form {
+    display: flex;
+    height: 430px;
+}

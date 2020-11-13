@@ -1,0 +1,308 @@
+.slider-wrap {
+    background-color: #e8e8e8;
+    overflow: hidden;
+}
+
+.slider {
+    height: 665px;
+    background-image: url(/src/assets/img/slider/slide-1.png);
+    object-fit: cover;
+    background-position: bottom;
+    display: flex;
+    align-items: center;
+}
+
+.slider__text {
+    font-family: Lato;
+    font-size: 37px;
+    line-height: 60px;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #222222;
+    width: 550px;
+    height: 104px;
+    padding-left: 19px;
+    border-left: 15px solid #f16d7f;
+    span {
+        color: #f16d7f;
+    }
+}
+
+//banners========================================================================================
+.banners {
+    height: 823px;
+    margin: 98px auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    &__item {
+        position: relative;
+        img {
+            object-fit: cover;
+            object-position: center;
+            height: 100%;
+            width: 100%;
+            transition: all 0.3s ease-in-out;
+            &:hover {
+                transform: scale(1.2);
+            }
+        }
+    }
+}
+
+.banners__item:first-child,
+.banners__item:last-child {
+    height: 70%;
+}
+
+.banners__item {
+    height: 27%;
+    width: 49%;
+    overflow: hidden;
+}
+
+.banners__text {
+    position: absolute;
+    z-index: 2;
+    h2 {
+        font-family: Lato;
+        font-size: 18px;
+        font-weight: 900;
+        letter-spacing: 0.45px;
+        text-align: left;
+        color: #222222;
+        font-family: Lato;
+        font-weight: 900;
+        letter-spacing: 0.45px;
+        text-align: left;
+        text-transform: uppercase;
+        color: #222222;
+    }
+    background-color: white;
+    padding: 16px 20px;
+    margin-top: 26px;
+    h1 {
+        font-family: Lato;
+        font-weight: 900;
+        letter-spacing: 0.45px;
+        text-align: left;
+        text-transform: uppercase;
+        color: #f16d7f;
+    }
+}
+
+//product-block==================================================================================
+.product {
+    display: flex;
+    flex-direction: column;
+}
+
+.product-title {
+    width: 100%;
+    text-align: center;
+    h1 {
+        text-transform: capitalize;
+        margin-bottom: 10px;
+    }
+    p {
+        color: #9f9f9f;
+    }
+}
+
+.product-items {
+    margin: 60px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.product-item {
+    display: block;
+    height: 364px;
+    width: 261px;
+    margin-bottom: 40px;
+    position: relative;
+    img {
+        object-fit: cover;
+        object-position: center;
+        height: 280px;
+        width: inherit;
+    }
+}
+
+.product-item:hover {
+    box-shadow: 0px 5px 8px 0 #00000028;
+    transition: box-shadow 0.3s ease-in-out;
+    .product-item__rating {
+        opacity: 1;
+    }
+    .hover-bg {
+        opacity: 1;
+    }
+}
+
+.hover-bg {
+    display: block;
+    width: inherit;
+    height: 280px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    transition: opacity 0.3s ease-in-out;
+    opacity: 0;
+    button {
+        outline: none;
+        background: none;
+        cursor: pointer;
+        position: absolute;
+        left: 75px;
+        top: 97px;
+        width: 45%;
+        padding: 10px 12px;
+        color: white;
+        font-size: 13px;
+        text-decoration: none;
+        text-transform: capitalize;
+        border: 1px solid white;
+        transition: all 0.3s;
+        &:hover {
+            box-shadow: 0px 0px 20px 1px rgba(255, 255, 255, 0.54);
+        }
+    }
+}
+
+.product-item__desc {
+    padding: 20px 15px;
+}
+
+.product-item__detail {
+    margin-top: 17px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.product-item__name {
+    text-transform: uppercase;
+    font-size: 13px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    a {
+        text-decoration: none;
+        color: #222222;
+        &:hover {
+            color: #f16d7f;
+        }
+    }
+}
+
+.product-item__price {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    color: #f16d7f;
+}
+
+.product-item__rating {
+    position: absolute;
+    font-size: 15px;
+    color: #e4af48;
+    right: 10px;
+    opacity: 0;
+    transition: all 0.3s;
+}
+
+.product-btn {
+    background-color: #f16d7f;
+    color: white;
+    text-decoration: none;
+    text-transform: capitalize;
+    padding: 19px 24px;
+    margin: 0 auto;
+    transition: all 0.3s ease-in-out;
+    &:hover {
+        background-color: #222222;
+        color: white;
+    }
+}
+
+//discount=====================================================================================
+.discount {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 97px auto;
+    background-color: #222224;
+    .item-group {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    &__item {
+        display: flex;
+        width: 373px;
+        img {
+            height: 40px;
+            width: 40px;
+            margin: 0 33px;
+            object-fit: contain;
+        }
+        .item__text {
+            color: white;
+            margin-right: 43px;
+            h1 {
+                font-size: 20px;
+                font-weight: bold;
+                letter-spacing: 0.5px;
+                margin-bottom: 17px;
+            }
+            p {
+                font-size: 14px;
+                font-weight: 300;
+                line-height: 24px;
+                letter-spacing: 0.35px;
+            }
+        }
+    }
+    &__banner {
+        display: flex;
+        max-width: 767px;
+        position: relative;
+        overflow: hidden;
+        img {
+            width: 100%;
+            object-fit: cover;
+            transition: all 0.3s ease-in-out;
+            &:hover {
+                transform: scale(1.2);
+            }
+        }
+        .banner__title {
+            position: absolute;
+            top: 146px;
+            left: 39px;
+            h1 {
+                font-size: 53px;
+                font-weight: bold;
+                letter-spacing: 0.8px;
+                color: white;
+                text-transform: uppercase;
+                span {
+                    color: #f16d7f;
+                }
+            }
+            p {
+                font-size: 32px;
+                font-weight: bold;
+                letter-spacing: 0.8px;
+                color: white;
+                text-transform: uppercase;
+            }
+        }
+    }
+}

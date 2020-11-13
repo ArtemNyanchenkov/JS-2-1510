@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Regular expressions</title>
+</head>
+
+<body>
+    <h1>Validation</h1>
+    <form action="#"> Введите ваше имя*:
+        <input required pattern="[a-zA-Zа-яА-Я]+" placeholder="Ваше имя">
+        <br>
+        <br> Введите номер телефона*:
+        <input pattern="^((\+7)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$" placeholder="Номер телефона">
+        <br>
+        <br> Введите электронную почту*:
+        <input pattern="^([a-z0-9_-]+\.)*[a-z0-9_-]+@[a-z0-9_-]+(\.[a-z0-9_-]+)*\.[a-z]{2,6}$" placeholder="E-mail">
+        <br>
+        <br> Введите текст:
+        <input type="text" placeholder="Ваш текст">
+        <br>
+        <br>
+        <input type="submit" value="Отправить"> </form>
+    <br> <small>*Поля, отмеченные звездочкой, обязательны для заполнения</small>
+    <!----------JS---------->
+    <script>
+        const option2 = /pattern/;
+    </script>
+</body>
+
+</html>

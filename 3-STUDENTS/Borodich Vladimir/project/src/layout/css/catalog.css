@@ -1158,16 +1158,16 @@ input::-webkit-calendar-picker-indicator {
   margin-bottom: 1.8rem;
 }
 
-.wrap .aside-nav .aside-menu > input[type="checkbox"]:checked + label {
+.wrap .aside-nav .aside-menu > input[type='checkbox']:checked + label {
   color: #f16d7f;
 }
 
-.wrap .aside-nav .aside-menu > input[type="checkbox"]:checked + label::after {
-  content: "\f0d8";
+.wrap .aside-nav .aside-menu > input[type='checkbox']:checked + label::after {
+  content: '\f0d8';
   color: #f16d7f;
 }
 
-.wrap .aside-nav .aside-menu > input[type="checkbox"]:checked ~ .aside-menu__drop-menu {
+.wrap .aside-nav .aside-menu > input[type='checkbox']:checked ~ .aside-menu__drop-menu {
   height: 46rem;
 }
 
@@ -1189,8 +1189,8 @@ input::-webkit-calendar-picker-indicator {
 }
 
 .wrap .aside-nav .aside-menu__heading::after {
-  content: "\f0d7";
-  font-family: "Font Awesome 5 Free";
+  content: '\f0d7';
+  font-family: 'Font Awesome 5 Free';
   font-weight: 900;
   position: absolute;
   right: 0.6rem;
@@ -1300,7 +1300,7 @@ input::-webkit-calendar-picker-indicator {
 }
 
 .wrap .main .catalog-form__trending-label:not(:last-child)::after {
-  content: "|";
+  content: '|';
   color: #dfdfdf;
   margin: 0 1.2rem;
 }
@@ -1332,7 +1332,7 @@ input::-webkit-calendar-picker-indicator {
 
 .wrap .main .catalog-form__size-label {
   color: #6f6e6e;
-  font-family: "Open Sans";
+  font-family: 'Open Sans';
   font-size: 1.4rem;
   font-weight: 400;
   text-transform: uppercase;
@@ -1368,8 +1368,8 @@ input::-webkit-calendar-picker-indicator {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-family: "FontAwesome";
-  content: "\f00c";
+  font-family: 'FontAwesome';
+  content: '\f00c';
   font-size: 1rem;
   color: transparent;
   background: #fff;
@@ -1578,14 +1578,14 @@ input::-webkit-calendar-picker-indicator {
 
 .wrap .main .catalog-form__output-min {
   color: #6f6e6e;
-  font-family: "Open Sans";
+  font-family: 'Open Sans';
   font-size: 1.4rem;
   font-weight: 400;
 }
 
 .wrap .main .catalog-form__output-max {
   color: #6f6e6e;
-  font-family: "Open Sans";
+  font-family: 'Open Sans';
   font-size: 1.4rem;
   font-weight: 400;
 }
@@ -1644,6 +1644,7 @@ input::-webkit-calendar-picker-indicator {
 
 .wrap .main .catalog-form__sort-value > output {
   margin-right: 2.1rem;
+  text-transform: capitalize;
 }
 
 .wrap .main .catalog-form__sort-value::-webkit-details-marker {
@@ -1659,8 +1660,8 @@ input::-webkit-calendar-picker-indicator {
 }
 
 .wrap .main .catalog-form__sort-value::after {
-  content: "\f0d7";
-  font-family: "Font Awesome 5 Free";
+  content: '\f0d7';
+  font-family: 'Font Awesome 5 Free';
   font-weight: 900;
   position: absolute;
   right: 0.6rem;
@@ -1757,8 +1758,8 @@ input::-webkit-calendar-picker-indicator {
 }
 
 .wrap .main .catalog-form__show-value::after {
-  content: "\f0d7";
-  font-family: "Font Awesome 5 Free";
+  content: '\f0d7';
+  font-family: 'Font Awesome 5 Free';
   font-weight: 900;
   position: absolute;
   right: 0.6rem;
@@ -2005,7 +2006,7 @@ input::-webkit-calendar-picker-indicator {
 }
 
 .wrap .main .catalog-pagination__list-item:nth-of-type(7)::after {
-  content: ".....";
+  content: '.....';
   color: #c4c4c4;
   font-size: 1.6rem;
   margin-left: -0.2rem;
@@ -2052,7 +2053,7 @@ input::-webkit-calendar-picker-indicator {
           box-shadow: none;
 }
 
-.feature {
+.catalog-page .feature {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2066,7 +2067,7 @@ input::-webkit-calendar-picker-indicator {
   background-color: #222224;
 }
 
-.feature__article {
+.catalog-page .feature__article {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2079,7 +2080,7 @@ input::-webkit-calendar-picker-indicator {
           align-items: center;
 }
 
-.feature__article-img {
+.catalog-page .feature__article-img {
   height: 3.5rem;
   width: 4.7rem;
   -o-object-fit: contain;
@@ -2087,12 +2088,12 @@ input::-webkit-calendar-picker-indicator {
   margin-bottom: 3.2rem;
 }
 
-.feature__article-content {
+.catalog-page .feature__article-content {
   text-align: center;
   width: 32rem;
 }
 
-.feature__article-h3 {
+.catalog-page .feature__article-h3 {
   font-size: 2rem;
   font-weight: 700;
   color: #fbfbfb;
@@ -2101,7 +2102,7 @@ input::-webkit-calendar-picker-indicator {
   margin-bottom: 1.7rem;
 }
 
-.feature__article-text {
+.catalog-page .feature__article-text {
   font-size: 1.4rem;
   font-weight: 300;
   color: #fbfbfb;

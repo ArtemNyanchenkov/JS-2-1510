@@ -1,0 +1,16 @@
+$mainColor: #f16d7f;
+
+@function divideDiv($divHeight, $numberOfParts) {
+  $result: $divHeight / $numberOfParts;
+  @return $result
+}
+
+@function substractDiv($mainDivWidth, $knownWidthDiv) {
+  $result: $mainDivWidth - $knownWidthDiv;
+  @return $result;
+}
+
+@mixin buttonHover () {
+  background-color: $mainColor;
+  color: #ffffff;
+}
